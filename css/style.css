@@ -1,0 +1,33 @@
+
+/* for images of women in literature and history */
+img {
+  width: 300px;           /* ///// LOOKED GREAT FOR LITERATURE, SUCKED FOR HISTORY ///// */
+  height: 300px;
+}
+
+/* for the big image on the index page */
+img.main_pic {
+  width: 1430px;
+  height: auto;
+}
+
+body {
+  background: black;
+  color: white;
+  size: 250%;
+  margin: 70;
+}
+
+nav a {
+  font-family: Arial;
+  color: hotpink;
+}
+
+nav a.current {
+  text-transform: uppercase;
+  color: green;
+}
+
+a {
+  color: purple;
+}
