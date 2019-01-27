@@ -33,7 +33,7 @@ nav a {
 .current {
   display: inline;
   text-transform: uppercase;
-  color: green;
+  color: cyan;
 }
 
 /* when you hover over the link it'll change color */
@@ -55,11 +55,11 @@ a {
 #skip a:focus {
   position: static;
   left: 10px;
-  border: 2px solid green;
+  border: 2px solid cyan;
 }
 
 a:focus {
-  border: 1px solid green;
+  border: 1px solid cyan;
 }
 
 
