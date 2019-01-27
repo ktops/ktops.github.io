@@ -11,23 +11,74 @@ img.main_pic {
   height: auto;
 }
 
+/* all the text for each page */
 body {
+  /* text-align: center; */
   background: black;
   color: white;
   size: 250%;
   margin: 70;
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 1.4;
 }
 
+/* the nav links to get form page to page */
 nav a {
   font-family: Arial;
   color: hotpink;
+  display: inline;
 }
 
-nav a.current {
+/* make it clear what page you're on */
+.current {
+  display: inline;
   text-transform: uppercase;
   color: green;
 }
 
-a {
-  color: purple;
+/* when you hover over the link it'll change color */
+nav a:hover {
+  color: blue;
 }
+
+/* for internal links */
+a {
+  display: inline;
+  color: yellow;
+}
+
+#skip a {
+  position: absolute;
+  left: -2000px;
+}
+
+#skip a:focus {
+  position: static;
+  left: 10px;
+  border: 2px solid green;
+}
+
+a:focus {
+  border: 1px solid green;
+}
+
+
+/* colors to consider */
+/*
+#c70039
+#ae0032
+#95002b
+#7c0024
+#64001c
+#4b0015
+#32000e
+#190007
+*/
+
+/*
+#F2DC5D
+#F2A359
+#DB9065
+#A4031F
+#240B36
+*/
