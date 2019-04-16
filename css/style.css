@@ -1,50 +1,92 @@
-
 /* for images of women in literature and history */
 img {
-  width: 300px;           /* ///// LOOKED GREAT FOR LITERATURE, SUCKED FOR HISTORY ///// */
-  height: 300px;
+  width: 90vw;
 }
 
 /* for the big image on the index page */
 img.main_pic {
-  width: 1430px;
+  width: 100%;
   height: auto;
+}
+
+footer{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+main{
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* all the text for each page */
 body {
-  /* text-align: center; */
   background: black;
   color: white;
-  size: 250%;
-  margin: 70;
-  font-family: 'Fjalla One', sans-serif;
+  size: 1vh;
   line-height: 1.4;
 }
 
 /* the nav links to get form page to page */
 nav a {
   font-family: Arial;
-  color: hotpink;
-  display: inline;
+  color: white;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4B0015;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vh;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main{
+  padding-top: 60px;
+}
+
+.title{
+  background-color: #4B0015;
+  font-family: Abril Fatface;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 1vh 4vw;
+  font-size: 3vh;
+}
+
+.fa-female{
+  padding-left: 10px;
 }
 
 /* make it clear what page you're on */
 .current {
-  display: inline;
+  /* display: inline; */
   text-transform: uppercase;
-  color: cyan;
+  color: black;
+  background-color: #FFC300;
 }
 
 /* when you hover over the link it'll change color */
 nav a:hover {
-  color: blue;
+  background-color: #AE0032;
 }
 
 /* for internal links */
 a {
   display: inline;
-  color: yellow;
+  color: #FFC300;
 }
 
 #skip a {
@@ -55,11 +97,168 @@ a {
 #skip a:focus {
   position: static;
   left: 10px;
-  border: 2px solid cyan;
+  /* border: 2px solid cyan; */
 }
 
 a:focus {
   border: 1px solid cyan;
+}
+
+h3{
+  margin: 10px;
+}
+
+.container {
+  margin:10px /*25px*/;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+}
+
+.container div{
+  border: 10px solid #64001C;
+  margin:25px 0px;
+  text-align: center;
+}
+
+.container h4{
+  margin-top: 20px;
+  font-weight: bold;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  text-align: center;
+}
+
+.container p{
+  margin-bottom: 25px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+
+/* .container li{
+  margin-left: 20px;
+  margin-right: 20px;
+} */
+
+ul{
+  list-style-type: none;
+}
+
+header{
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+  text-decoration: underline;
+  padding-top: 30px;
+  font-size: 4vw;
+}
+
+.all_defs {
+  margin:10px 25px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  /* justify-items: center; */
+}
+
+.all_defs div{
+  border: 10px solid #64001C;
+  margin:25px 0px;
+}
+
+.all_defs h3{
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 2vh;
+}
+
+.all_defs h4{
+  padding-left: 5vw;
+}
+
+.all_defs p{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 4vw;
+}
+
+.bio{
+  margin:10px 25px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.bio span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.tops{
+  font-family: Arial;
+  background-color: #4B0015;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+/* .tops a:hover {            ///////// HOW CAN I GET THIS BACK TO TOP TO HOVER LIKE THE TOP ONES DO
+  background-color: #AE0032;
+} */
+
+.thanks{
+  padding-bottom: 40px;
+}
+
+h2{
+  padding: 2vw;
+}
+
+.outter{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.viddy{
+  display: inline-block;
+  border: 10px solid #64001C;
+  margin:25px;
+  padding: 1vh;
+  width: 50%;
+}
+
+.lit{
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h2{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #AE0032; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #AE0032; }
 }
 
 
@@ -82,3 +281,64 @@ a:focus {
 #A4031F
 #240B36
 */
+
+@media screen and (min-width: 776px){
+  /* /////////// SAVE FOR BIGGER VERSIONS /////////// */
+  nav li{
+    float: left;
+  }
+
+  nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 3.5vw;
+    text-decoration: none;
+  }
+
+  .title{
+    overflow: hidden;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vh 3vw;
+    text-decoration: bold;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .title{
+    font-size: 5vh;
+  }
+
+  nav li a{
+    padding: 3vh 3.5vw;
+  }
+
+  nav a{
+    font-size: 3vh;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+  }
+
+  img{
+    width: 25vw;
+  }
+
+  h2{
+    font-size: 2vw;
+  }
+
+  .all_defs h3{
+    font-size: 2vw
+  }
+
+  .container div{
+    height: 95vh;
+    overflow: scroll;
+  }
+
+}

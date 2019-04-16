@@ -5,55 +5,104 @@
 <head>
   <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- connects it to the style sheet -->
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Notable" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
 
   <title>Women's Web</title>
 </head>
+
+<a name="top"> </a>
+
 <body>
-  <main id="main">
-    <!-- add a picture of me here? -->
-    <img class="main_pic" src="images/women_march_pano.jpg" alt="Image of the Ann Arbor Women's March"/>
 
-    <div id="skip"> <a class="skip" href="#main"> Skip to Content</a> </div>
+  <div id="skip"> <a class="skip" href="#main"> Skip to Content</a> </div>
 
+  <div id='navbar'>
     <nav>
       <ul>
+        <li class="title"> Women's  Web <i class="fas fa-female"></i></li>
         <li><a class="current" href="index.html">About</a></li>
         <li><a href="literature.html">Literature</a></li>
         <li><a href="history.html">History and Politics</a></li>
         <li><a href="femdict.html">Feminist Dictionary</a></li>
       </ul>
     </nav>
+  </div>
+
+  <main id="main">
+    <!-- add a picture of me here? -->
+    <!-- <img class="main_pic" src="images/women_march_pano.jpg" alt="Image of the Ann Arbor Women's March"/> -->
+
+    <img class="main_pic" src="images/women_march_pano.jpg" alt="Image of the Ann Arbor Women's March"/>
 
     <header>
       <h1> Woman's Web </h1>
       <h2> Hi guys, and welcome to my website! </h2>
     </header>
 
+    <div class="bio">
       <p>
         This website started as an idea when I was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. Now as a junior, I finally have the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really my first introduction to feminism and feminist thought, and I wanted to share my new found knowledge with others. To me, this looked like a website where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. My hometown may not have been forward thinking, but we did have internet connection.
       </p>
       <!-- make each of these descriptors below an option for a link? heck yeah girl -->
       <p>
-        This website currently contains 4 pages other than this one: <br/>
-        Literature - featuring books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers. <br/>
-        History / Politics - featuring bios and links to websites of important women in history and current women in Congress or otherwise politically involved. <br/>
-        Feminist Dictionary - featuring a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms. <br/>
-        Academics - featuring important women in the past and present in academia, women trailblazers in STEM fields, and Women's Studies courses here at the University of Michigan. <br/>
+        This website currently contains 3 pages other than this one: <br/>
+        <span>Literature</span> - featuring books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers. <br/>
+        <span>History / Politics</span> - featuring bios and links to websites of important women in history and current women in Congress or otherwise politically involved. <br/>
+        <span>Feminist Dictionary</span> - featuring a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms. <br/>
+        <!-- <span>Academics</span> - featuring important women in the past and present in academia, women trailblazers in STEM fields, and Women's Studies courses here at the University of Michigan. <br/> -->
       </p>
       <p>
-        DISCLAIMER: I do not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
+        <span>DISCLAIMER:</span> I do not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
       </p>
+      <p>
+        To get a taste of what I'm about, here's a video of a speech Michelle Obama gave about empowering women through education!
+      </p>
+    </div>
+
+    <div class='outter'>
+      <div class='viddy'>
+        <video width="600" controls>
+          <source src="images/speech.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+        <p>
+          Michelle Obama giving a speech for her initiative Let Girls Learn, which aims to ensure that young girls are getting a good education.
+        </p>
+      </div>
+    </div>
 
   <footer>
-    <p>
-      Thanks for visiting!
+    <p class="thanks">
+      Thanks for visiting! <i class="far fa-grin" style="color:white;"></i>
     </p>
+    <a href="#top" class="tops">Back to Top</a>
   </footer>
   </main>
 </body>
+
+<!-- making the sticky nav -->
+<script>
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+
 </html>
