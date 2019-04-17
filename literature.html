@@ -48,11 +48,14 @@
 
       <header>
         <h1>Literature</h1>
-        <div class='lit'>
+        <!-- <div class='lit'>
           <div class='typewriter'>
             <h2>Women: putting the lit in literature since day one.</h2>
           </div>
-        </div>
+        </div> -->
+
+        <button class='boot' onclick="typeWriter()">Click me!</button>
+        <h2 id="hide"></h2>
 
         <!-- <h2>Woman Writers</h2> -->
         <!-- ALL BIO INFO GRABBED FROM WIKIPEDIA -->
@@ -387,6 +390,20 @@
   <h3>Plays</h3> -->
 
 </body>
+
+<script>
+  var i = 0;
+  var logo = 'Women: putting the lit in literature since day one.';
+  var speed = 50;
+
+  function typeWriter() {
+    if (i < logo.length) {
+      document.getElementById("hide").innerHTML += logo.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+</script>
 
 <!-- making the sticky nav -->
 <script>

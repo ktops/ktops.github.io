@@ -218,6 +218,7 @@ h2{
   padding: 2vw;
 }
 
+/* html5 video player */
 .outter{
   display: grid;
   grid-template-columns: 1fr;
@@ -233,7 +234,8 @@ h2{
   width: 50%;
 }
 
-.lit{
+/* typewriter effect  COOL OLD WAY, PUT BACK LATER */
+/* .lit{
   display: flex;
   justify-content: center;
 }
@@ -249,22 +251,32 @@ h2{
     blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #AE0032; }
+} */
+
+
+/* typerwriter button and video buttons */
+.boot{
+  border: none;
+  background-color: #4B0015;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2vh;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .accordion {
   background-color: #4B0015;
-  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;

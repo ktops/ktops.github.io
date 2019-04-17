@@ -62,7 +62,7 @@
               <button type="button" data-filter=".flotus">First Ladies</button>
               <button type="button" data-filter=".supco">Supreme Court Justices</button>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()" alt='hamburger menu icon' title='hamburger menu icon'>
+            <a href="javascript:void(0);" class="icon" onclick="ham()" alt='hamburger menu icon' title='hamburger menu icon'>
               <i title='hamburger menu icon' alt='hamburger menu icon' class="fa fa-bars"></i>
             </a>
       </div>
@@ -315,6 +315,18 @@
 
 </body>
 
+<!-- hamburger -->
+<script>
+function ham() {
+  var x = document.getElementById("other");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 <!-- making the sticky nav -->
 <script>
   window.onscroll = function() {myFunction()};
@@ -327,18 +339,6 @@
       navbar.classList.remove("sticky");
     }
   }
-</script>
-
-<!-- hamburger -->
-<script>
-function myFunction() {
-  var x = document.getElementById("other");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 </script>
 
 </html>
