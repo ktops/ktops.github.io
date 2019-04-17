@@ -48,6 +48,21 @@
     </nav>
   </div>
 
+
+  <!-- <div class="topnav">
+    <a href="#home" class="active"> Women's  Web <i class="fas fa-female"></i></a>
+    <div id="myLinks">
+      <a class="current" href="index.html">About</a>
+      <a href="literature.html">Literature</a>
+      <a href="history.html">History and Politics</a>
+      <a href="femdict.html">Feminist Dictionary</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
+
   <main id="main">
     <!-- add a picture of me here? -->
     <!-- <img class="main_pic" src="images/women_march_pano.jpg" alt="Image of the Ann Arbor Women's March"/> -->
@@ -65,12 +80,30 @@
       </p>
       <!-- make each of these descriptors below an option for a link? heck yeah girl -->
       <p>
-        This website currently contains 3 pages other than this one: <br/>
-        <span>Literature</span> - featuring books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers. <br/>
-        <span>History / Politics</span> - featuring bios and links to websites of important women in history and current women in Congress or otherwise politically involved. <br/>
-        <span>Feminist Dictionary</span> - featuring a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms. <br/>
-        <!-- <span>Academics</span> - featuring important women in the past and present in academia, women trailblazers in STEM fields, and Women's Studies courses here at the University of Michigan. <br/> -->
+        This website currently contains 3 pages other than this one - click below to see a short description of each!
       </p>
+    </div>
+
+      <button class="accordion">Literature</button>
+      <div class="panel">
+        <p>
+          This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
+        </p>
+      </div>
+      <button class="accordion">History / Politics</button>
+      <div class="panel">
+        <p>
+          This page features bios of important women in history and women currently in Congress or otherwise politically involved.
+        </p>
+      </div>
+      <button class="accordion">Feminist Dictionary</button>
+      <div class="panel">
+        <p>
+          This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
+        </p>
+      </div>
+
+    <div class='bio'>
       <p>
         <span>DISCLAIMER:</span> I do not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
       </p>
@@ -99,6 +132,37 @@
     <a href="#top" class="tops">Back to Top</a>
   </footer>
   </main>
+
+  <!-- hamburger nav!! -->
+  <!-- <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script> -->
+
+  <!-- accordion -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
 </body>
 
 <!-- making the sticky nav -->
