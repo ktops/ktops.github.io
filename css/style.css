@@ -234,6 +234,10 @@ h2{
   width: 50%;
 }
 
+#vid {
+  width: 90%
+}
+
 /* typewriter effect  COOL OLD WAY, PUT BACK LATER */
 /* .lit{
   display: flex;
