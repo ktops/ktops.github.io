@@ -57,10 +57,10 @@
       <div class="control">
           <button type="button" data-filter="all">All</button>
           <div id=other>
-              <button type="button" data-filter=".woco">Women of Congress</button>
-              <button type="button" data-filter=".wra">Women's Rights Activists</button>
-              <button type="button" data-filter=".flotus">First Ladies</button>
-              <button type="button" data-filter=".supco">Supreme Court Justices</button>
+              <button onclick="pretty()" type="button" data-filter=".woco" id="buttonz">Women of Congress</button>
+              <button onclick="pretty()" type="button" data-filter=".wra" id="buttonz">Women's Rights Activists</button>
+              <button onclick="pretty()" type="button" data-filter=".flotus" id="buttonz">First Ladies</button>
+              <button onclick="pretty()" type="button" data-filter=".supco" id="buttonz">Supreme Court Justices</button>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="ham()" alt='hamburger menu icon' title='hamburger menu icon'>
               <i title='hamburger menu icon' alt='hamburger menu icon' class="fa fa-bars"></i>
@@ -326,6 +326,14 @@ function ham() {
   }
 }
 </script>
+
+<!-- making it contrast extra -->
+<!-- <script>
+function pretty() {
+   var elem = document.getElementById("buttonz");
+   elem.style.backgroundColor = "#FFC300";
+}
+</script> -->
 
 <!-- making the sticky nav -->
 <script>
