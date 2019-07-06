@@ -363,6 +363,27 @@ h2{
   color: white;
 }
 
+
+/* adding in buttons for dict page */
+.abc{
+  display: inline-block;
+  background-color: #4B0015;
+  border: none;
+  color: white;
+  padding: 2vh 3vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.abc_container{
+  display: flex;
+  justify-content: center;
+}
+
 /* colors to consider */
 /*
 #c70039
